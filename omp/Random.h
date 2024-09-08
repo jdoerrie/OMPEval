@@ -29,17 +29,11 @@ public:
         return result;
     }
 
-    static uint64_t min()
-    {
-        return 0;
-    }
+    static constexpr uint64_t min() { return 0; }
 
-    static uint64_t max()
-    {
-        return ~(uint64_t)0;
-    }
+    static constexpr uint64_t max() { return ~(uint64_t)0; }
 
-private:
+   private:
     static uint64_t rotl(uint64_t x, unsigned k)
     {
         // MSVC and most g++ versions will compile this to rotl on x64.
