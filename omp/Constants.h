@@ -14,7 +14,7 @@ static const unsigned RANK_SHIFT = 2;
 static const unsigned BOARD_CARDS = 5;
 static const unsigned COMBO_COUNT = 1326;
 
-static const unsigned HAND_CATEGORY_OFFSET = 0x1000; // 4096
+static const unsigned HAND_CATEGORY_OFFSET = 0x1000;  // 4096
 static const unsigned HAND_CATEGORY_SHIFT = 12;
 static const unsigned HIGH_CARD = 1 * HAND_CATEGORY_OFFSET;
 static const unsigned PAIR = 2 * HAND_CATEGORY_OFFSET;
@@ -26,6 +26,6 @@ static const unsigned FULL_HOUSE = 7 * HAND_CATEGORY_OFFSET;
 static const unsigned FOUR_OF_A_KIND = 8 * HAND_CATEGORY_OFFSET;
 static const unsigned STRAIGHT_FLUSH = 9 * HAND_CATEGORY_OFFSET;
 
-}
+}  // namespace omp
 
-#endif // OMP_CONSTANTS_H
+#endif  // OMP_CONSTANTS_H
